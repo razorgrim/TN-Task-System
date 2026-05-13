@@ -8,9 +8,9 @@
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
 </head>
 
-<body class="bg-gray-100 min-h-screen">
+<body class="min-h-screen bg-gradient-to-br from-slate-100 via-blue-50 to-slate-200 text-slate-800">
 
-<div class="max-w-7xl mx-auto p-6">
+<div class="max-w-[1600px] mx-auto px-6 py-8">
 
     <div class="flex justify-between items-center mb-6">
         <h1 class="text-3xl font-bold">
@@ -25,7 +25,7 @@
         </a>
     </div>
 
-    <div class="bg-white p-6 rounded-xl shadow">
+    <div class="bg-white/90 backdrop-blur p-6 rounded-2xl shadow-lg border border-white/60">
         <div id="calendar"></div>
     </div>
 

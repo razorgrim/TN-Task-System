@@ -9,9 +9,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/interaction@6.1.15/index.global.min.js"></script>
 </head>
 
-<body class="bg-gray-100 min-h-screen">
+<body class="min-h-screen bg-gradient-to-br from-slate-100 via-blue-50 to-slate-200 text-slate-800">
 
-<div class="max-w-7xl mx-auto p-6">
+<div class="max-w-[1600px] mx-auto px-6 py-8">
 
     <div class="flex justify-between items-center mb-6">
         <h1 class="text-3xl font-bold">
@@ -38,7 +38,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
 
         <!-- MAIN CALENDAR -->
-        <div class="lg:col-span-3 bg-white p-6 rounded-xl shadow">
+        <div class="lg:col-span-3 bg-white/90 backdrop-blur p-6 rounded-2xl shadow-lg border border-white/60">
 
             <div class="flex justify-end mb-4">
                 <button
@@ -54,7 +54,7 @@
         </div>
 
         <!-- RIGHT SIDE EMPLOYEE PANEL -->
-        <div class="lg:col-span-1 bg-white p-6 rounded-xl shadow">
+        <div class="lg:col-span-1 bg-white/90 backdrop-blur p-6 rounded-2xl shadow-lg border border-white/60">
 
             <h2 class="text-2xl font-bold mb-4">
                 Employees

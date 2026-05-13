@@ -10,6 +10,7 @@ class Task extends Model
         'title',
         'description',
         'assigned_to',
+        'team_lead_id',
         'task_date',
         'end_date',
         'start_time',
@@ -17,4 +18,15 @@ class Task extends Model
         'location',
         'status',
     ];
+
+    public function teamLead()
+    {
+        return $this->belongsTo(Employee::class, 'team_lead_id');
+    }
+
+    public function members()
+    {
+        return $this->belongsToMany(Employee::class, 'employee_task')
+            ->withTimestamps();
+    }
 }

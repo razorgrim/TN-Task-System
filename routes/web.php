@@ -23,6 +23,11 @@ Route::middleware('auth')->group(function () {
 
     Route::post('/admin/employees', [EmployeeController::class, 'store'])->name('employees.store');
     Route::delete('/admin/employees/{employee}', [EmployeeController::class, 'destroy'])->name('employees.destroy');
+
+    Route::post('/admin/tasks/update-dates', [TaskController::class, 'updateDates'])
+    ->name('tasks.updateDates');
+    Route::get('/admin/employees/availability', [TaskController::class, 'employeeAvailability'])
+    ->name('employees.availability');
 });
 
 require __DIR__.'/auth.php';
